@@ -18,8 +18,8 @@ class PythonPopplerConan(ConanFile):
     generators = "txt"
     settings = "os", "compiler", "build_type", "arch"
     requires = (
-        "poppler/0.71.0@zehome/testing",
-        "PyQt5/5.11.3@zehome/testing",
+        "poppler/0.71.0@clarisys/stable",
+        "PyQt5/5.11.3@clarisys/stable",
     )
     _source_subfolder = "python-popppler-qt5"
 
