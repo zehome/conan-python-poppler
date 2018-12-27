@@ -22,6 +22,7 @@ class PythonPopplerConan(ConanFile):
         "PyQt5/5.11.3@clarisys/stable",
     )
     _source_subfolder = "python-popppler-qt5"
+    short_paths = True
 
     # LC: poppler-qt5
     default_options = "poppler:with_splash=True", "poppler:shared=True"
