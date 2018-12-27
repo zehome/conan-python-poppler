@@ -55,7 +55,9 @@ class PythonPopplerConan(ConanFile):
                     sipdir=os.path.join(self.build_folder, "sip", "PyQt5"),
                     libdirs=";".join(self.deps_cpp_info.libdirs),
                     incdirs=";".join(includedirs),
-            ))
+                ),
+                run_environment=True,
+            )
 
     def package(self):
         self.copy("*popplerqt5*.pyd", dst="site-packages", keep_path=False)
