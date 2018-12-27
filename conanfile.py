@@ -47,7 +47,7 @@ class PythonPopplerConan(ConanFile):
             includedirs.append(os.path.join(incdir, "poppler"))
         with tools.chdir(self._source_subfolder):
             self.run("{vc}python setup.py build_ext --verbose "
-                "--poppler-version=0.71.0 "
+                "--poppler-version=0.72.0 "
                 "--pyqt-sip-dir={sipdir} "
                 "--library-dirs={libdirs} "
                 "--include-dirs={incdirs}".format(
